@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsoption ={
-    origin:'http://localhost:5173',
+    origin:'https://hs-frontend.onrender.com',
     credentials: true
 }
 app.use(cors(corsoption));
