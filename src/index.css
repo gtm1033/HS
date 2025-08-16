@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body , html {
+    overflow-x: hidden;
+    margin-top: 0;
+    padding-top: 0;
+}
