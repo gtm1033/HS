@@ -20,6 +20,14 @@ const corsoption ={
     credentials: true
 }
 app.use(cors(corsoption));
+app.get('/api', (req, res) => {
+  res.json({
+    message: "API is running successfully",
+    status: "success",
+    timestamp: new Date().toISOString()
+  });
+});
+
 app.use("/api/v1/user", userRoute)
 
 app.use("/api/v1/company", companyRoute)
